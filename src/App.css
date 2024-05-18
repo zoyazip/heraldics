@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Kyiv';
+    src: url('C:/Users/chern/Documents/Gerboni/heraldica/public/Fonts/Dmitry Rastvortsev - KyivType Sans Bold-.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kyiv';
+    src: url('C:/Users/chern/Documents/Gerboni/heraldica/public/Fonts/Dmitry Rastvortsev - KyivType Sans Regular3.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.App {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kyiv", serif;
+    line-height: 173%;
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+}
+
+.ContentRightSide {
+  width: 90vw;
+  max-width: 540px;
+  min-width: 350px;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hint {
+  height: 175px;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.disabled {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+  .Content {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  #ornament {
+    padding-bottom: 32px;
+  }
+
+  .hint {
+    height: auto;
+  }
+
+  .ContentRightSide {
+    height: auto;
+  }
+  
+  .finish {
+    width: 90vw;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
